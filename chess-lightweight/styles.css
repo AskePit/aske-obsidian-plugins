@@ -1,0 +1,58 @@
+body {
+    background-color: #46423e;
+
+    --cell-size: 50px;
+    --cell-visibility: 28%;
+}
+
+.board-container {
+    width: calc(var(--cell-size) * 8);
+    height: calc(var(--cell-size) * 8);
+    position: relative;
+    display: flex;
+}
+
+.board {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px 20px 0px;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.square {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--cell-size) * 0.85);
+    font-family: serif;
+    padding-top: 6px;
+    /* box-shadow: 0 0 var(--cell-size) rgba(1,0,0,0.9) inset; */
+}
+
+.white {
+    background-color: color-mix(in srgb, #ccc var(--cell-visibility), white);
+}
+
+.black {
+    background-color: color-mix(in srgb, #555 var(--cell-visibility), white);
+}
+
+.red-hihglight {
+    box-shadow: 0 0 calc(var(--cell-size)*2) rgba(255, 0, 0, 0.75) inset;
+}
+
+.blue-hihglight {
+    box-shadow: 0 0 calc(var(--cell-size)*2) rgba(0, 0, 255, 0.4) inset;
+}
+
+.green-hihglight {
+    box-shadow: 0 0 calc(var(--cell-size)*2) rgba(0, 255, 0, 0.5) inset;
+}

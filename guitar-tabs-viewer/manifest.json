@@ -1,0 +1,11 @@
+{
+	"id": "guitar-tabs-viewer",
+	"name": "Guitar Tabs Viewer",
+	"version": "1.0.1",
+	"minAppVersion": "1.0.0",
+	"description": "Read your tabulatures comfortably",
+	"author": "askepit",
+	"authorUrl": "",
+	"helpUrl": "",
+	"isDesktopOnly": true
+}

@@ -1,0 +1,11 @@
+{
+	"id": "todo-suggest",
+	"name": "Todo Suggest",
+	"version": "1.0.1",
+	"minAppVersion": "1.0.0",
+	"description": "Let us choose your activity",
+	"author": "askepit",
+	"authorUrl": "",
+	"helpUrl": "",
+	"isDesktopOnly": true
+}

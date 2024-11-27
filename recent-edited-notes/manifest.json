@@ -1,0 +1,11 @@
+{
+	"id": "recent-edited-notes",
+	"name": "Recent Edited Notes",
+	"version": "1.0.1",
+	"minAppVersion": "1.0.0",
+	"description": "Observe and navigate your top-N recent edited notes",
+	"author": "askepit",
+	"authorUrl": "",
+	"helpUrl": "",
+	"isDesktopOnly": true
+}
