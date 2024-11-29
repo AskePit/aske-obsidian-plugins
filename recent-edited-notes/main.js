@@ -81,12 +81,16 @@ class RecentEditedNotesView extends obsidian.ItemView {
     }
 
     async onOpen() {
-        this.plugin.app.vault.on('modify', (file) => {
-            this.update()
-        })
-        this.plugin.app.vault.on('rename', (file) => {
-            this.update()
-        })
+        this.registerEvent(
+            this.plugin.app.vault.on('modify', (file) => {
+                this.update()
+            })
+        )
+        this.registerEvent(
+            this.plugin.app.vault.on('rename', (file) => {
+                this.update()
+            })
+        )
 
         this.update()
     }
